@@ -1,0 +1,83 @@
+{
+    "menu": [
+        {
+            "type": "link",
+            "label": {
+                "it": "Dati anagrafici",
+                "en": "Personal data"
+            },
+            "link": "name"
+        },
+        {
+            "type": "link",
+            "label": {
+                "it": "Studi",
+                "en": "Education"
+            },
+            "link": "education"
+        },
+        {
+            "type": "link",
+            "label": {
+                "it": "Competenze",
+                "en": "Skills"
+            },
+            "link": "skills"
+        },
+        {
+            "type": "dropdown",
+            "label": {
+                "it": "ITA",
+                "en": "ENG"
+            },
+            "comment": "this must be a first level key. containing array of menu",
+            "options": "languages"
+        }
+    ],
+    "comment": "Someone should fill link field in languages array",
+    "languages": [
+        {
+            "label": "ITA",
+            "lang": "it"
+        },
+        {
+            "label": "ENG",
+            "lang": "en"
+        }
+    ],
+    "name": {
+        "first": "Domenico",
+        "last": "Di Iorio"
+    },
+    "birth": {
+        "day": "1991/04/26",
+        "place": "Castel San Giovanni (PC)"
+    },
+    "education": {
+        "degrees": [
+            {
+                "date": "2016/02/11",
+                "university": "Alma Mater Studiorum - University of Bologna",
+                "course": {
+                    "en": "Electronic and telecommunications engineering",
+                    "it": "Ingegneria elettronica e delle telecomunicazioni"
+                },
+                "vote": 101,
+                "max": 110,
+                "code": "LM-29",
+                "description": {
+                    "en":"Master’s Degree in Electronical Engineering",
+                    "it":"Laurea Magistrale in Ingegneria Elettronica"
+                }
+            }
+        ]
+    },
+    "skills": {
+        "computer": {
+
+        },
+        "language": {
+
+        }
+    }
+}
