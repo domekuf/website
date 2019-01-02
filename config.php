@@ -20,5 +20,5 @@ function RT_generate() {
 }
 define("AB", getcwd());
 define("RT", RT_generate());
-define("TITLE", "Website");
+define("TITLE", "Skyron");
 

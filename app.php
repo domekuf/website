@@ -51,9 +51,9 @@ foreach ($db["pages"] as $r) {
         $args["title"] = " | $n";
         $args["menu"] = $menu;
         $args["css"] = [];
-        $args["css"][] = asset("css/web.css");
+        $args["css"][] = asset("css/srn.css");
         $args["js"] = [];
-        $args["js"][] = asset("js/web.js");
+        $args["js"][] = asset("js/srn.js");
 
         $this->renderer->render($response, "/head.php", $args);
         $this->renderer->render($response, "/menu.php", $args);

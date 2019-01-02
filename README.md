@@ -1,4 +1,4 @@
-Website template
-================
+Skyron
+======
 
-Use this project as a template for new websites.
+Skyron website's branch.
