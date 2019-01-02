@@ -4,7 +4,7 @@ function LANG_generate() {
     return $lang;
 }
 define("APP_ROUTES", "app.php");
-define("APP_ENTRY", "page_1");
+define("APP_ENTRY", "page-1");
 define("LANG", LANG_generate());
 function RT_generate() {
     $rt = "//".$_SERVER["SERVER_NAME"];
