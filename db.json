@@ -1,0 +1,66 @@
+{
+    "pages": [
+        {
+            "name": "Home",
+            "url": "home",
+            "menu": true,
+            "view": "page-1",
+            "sections": [
+                "Main"
+            ]
+        },
+        {
+            "name": "Services",
+            "url": "services",
+            "menu": true,
+            "view": "page-1",
+            "sections": [
+                "Yacht design and engineering",
+                "Technical office",
+                "CFD",
+                "FEM",
+                "Project management",
+                "High tech composite construction consultancies"
+            ]
+        },
+        {
+            "name": "The team",
+            "url": "team",
+            "menu": true,
+            "view": "page-1",
+            "sections": [
+                "Main"
+            ],
+            "comments": "Presentazione uno per uno con foto"
+        },
+        {
+            "name": "Projects",
+            "url": "projects",
+            "menu": true,
+            "view": "page-1",
+            "sections": [
+                "GS 34",
+                "Mini",
+                "Tuccoli",
+                "Dufour JJL"
+            ],
+            "comments": "Come presentiamo? con una serie di quadretti che rimandano al singolo progetto (vedi Botin/Pure?)"
+        },
+        {
+            "name": "News",
+            "url": "news",
+            "menu": true,
+            "sections": [
+                "Main"
+            ]
+        },
+        {
+            "name": "Contacts",
+            "url": "contacts",
+            "menu": true,
+            "sections": [
+                "Main"
+            ]
+        }
+    ]
+}
