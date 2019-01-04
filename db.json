@@ -50,6 +50,7 @@
             "name": "News",
             "url": "news",
             "menu": true,
+            "view": "page-1",
             "sections": [
                 "Main"
             ]
@@ -58,6 +59,7 @@
             "name": "Contacts",
             "url": "contacts",
             "menu": true,
+            "view": "page-1",
             "sections": [
                 "Main"
             ]
