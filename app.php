@@ -51,6 +51,7 @@ foreach ($db["pages"] as $r) {
         $args["title"] = " | $n";
         $args["menu"] = $menu;
         $args["css"] = [];
+        $args["css"][] = asset("css/grayscale.css");
         $args["css"][] = asset("css/srn.css");
         $args["js"] = [];
         $args["js"][] = asset("js/srn.js");

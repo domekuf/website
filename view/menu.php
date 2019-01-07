@@ -1,13 +1,20 @@
-<nav class="navbar navbar-expand-lg peach-gradient lighten-3 mb-4 font-weight-bold z-depth-1">
-    <a class="navbar-brand white-text" href="#"><?= $T->trans(TITLE) ?></a>
-    <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
-        aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="hamburger-icon"><span></span><span></span><span></span></div>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent20">
-        <ul class="navbar-nav mr-auto">
-        <!-- Dinamically generated -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main"
+                aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger-icon"><span></span><span></span><span></span></div>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">
+                <span class="light"><?= $T->trans(TITLE) ?></span> Srl
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="navbar-main">
+            <ul class="nav navbar-nav" deleted-class="mr-auto">
+                <!-- Dinamically generated -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
 <?php
 foreach ($menu as $element) {
     $label = $element["label"];
@@ -15,8 +22,8 @@ foreach ($menu as $element) {
     case "link":
         $link = $element["link"];
 ?>
-        <li class="nav-item">
-            <a class="nav-link white-text" href="<?=$link?>"><?=$T->trans($label)?></a>
+        <li>
+            <a class="page-scroll" href="<?=$link?>"><?=$T->trans($label)?></a>
         </li>
 <?php
         break;
@@ -42,6 +49,7 @@ foreach ($menu as $element) {
     }
 }
 ?>
-        </ul>
+            </ul>
+        </div>
     </div>
 </nav>

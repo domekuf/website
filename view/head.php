@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
         <meta name="HandheldFriendly" content="true" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Skyron srl è una start up innovativa, studio di progettazione nautica, costituito da ingegneri, architetti navali, progettisti e designers.">
+        <meta name="author" content="Skyron">
+
         <title><?=TITLE?><?=$title?></title>
         <link rel="apple-touch-icon" sizes="57x57"         href="favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60"         href="favicon/apple-icon-60x60.png">
@@ -25,10 +28,11 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Custom fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <!-- Bootstrap core CSS -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Material Design Bootstrap -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.15/css/mdb.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <?php foreach($css as $css_) { ?>
         <link rel="stylesheet" href="<?= $css_ ?>">
 <?php } ?>
