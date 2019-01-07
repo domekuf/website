@@ -15,45 +15,38 @@ $container['renderer'] = new PhpRenderer("./view");
 session_start();
 $db = json_decode(ManagerAssets::load("db.json"), true);
 
-$registered_routes = [
-    ["name" => "Page 1", "controller" => ControllerStatic, "action" => "page_1"],
-];
-
-
-$menu = [];
-foreach ($db["pages"] as $p) {
-    $p["controller"] = ControllerStatic;
-    $p["action"] = "page_1";
-    $registered_routes[] = $p;
-    if ($p["menu"]) {
-        $menu[] = [
-            "type" => "link",
-            "link" => $p["url"],
-            "label" => $p["name"]
-        ];
-    }
-}
-
 function asset($filename) {
     return ManagerAssets::url($filename);
 }
 
-foreach ($registered_routes as $r) {
+$menu = [];
+foreach ($db["pages"] as $r) {
+    if ($r["menu"]) {
+        $menu[] = [
+            "type" => "link",
+            "link" => $r["url"],
+            "label" => $r["name"]
+        ];
+    }
+}
+
+foreach ($db["pages"] as $r) {
     $n = $r["name"];
-    $n_= strtolower(isset($r["url"])? $r["url"] : str_replace(' ', '-', $n));
-    $view = isset($r["view"])?$r["view"]:$n_;
-    $controller = $r["controller"];
-    $action = $r["action"];
-    $app->get("/{lang}/$n_", function ($request, $response, $args) use($n, $n_, $view, $controller, $action, $menu) {
+    $n_= strtolower($r["url"]?:str_replace(' ', '-', $n));
+    $app->get("/{lang}/".$n_, function ($request, $response, $args) use($r, $menu, $n, $n_) {
+
+        $controller = $r["controller"]?:"ControllerStatic";
+        $action = $r["action"]?:"default";
+        $view = $r["view"]?:"view-0";
+
         $lang = $args["lang"];
         $translator = new Translator($lang);
         $translator->addLoader('json', new JsonFileLoader());
         $translator->setFallbackLocales(array('en')); //TODO redirect?
         $translator->addResource('json', "i18n/$lang.json", $lang);
+
         $args["current_url"] = $n_;
-        if (isset($controller) && isset($action)) {
-            $args["data"] = $controller::$action($request, $response, $args);
-        }
+        $args["data"] = $controller::$action($request, $response, $args);
         $args["T"] = $translator;
         $args["title"] = " | $n";
         $args["menu"] = $menu;

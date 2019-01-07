@@ -4,7 +4,7 @@
             "name": "Home",
             "url": "home",
             "menu": true,
-            "view": "page-1",
+            "view": "view-0",
             "sections": [
                 "Main"
             ]
@@ -13,7 +13,7 @@
             "name": "Services",
             "url": "services",
             "menu": true,
-            "view": "page-1",
+            "view": "view-0",
             "sections": [
                 "Yacht design and engineering",
                 "Technical office",
@@ -27,7 +27,7 @@
             "name": "The team",
             "url": "team",
             "menu": true,
-            "view": "page-1",
+            "view": "view-0",
             "sections": [
                 "Main"
             ],
@@ -37,7 +37,7 @@
             "name": "Projects",
             "url": "projects",
             "menu": true,
-            "view": "page-1",
+            "view": "view-0",
             "sections": [
                 "GS 34",
                 "Mini",
@@ -50,7 +50,7 @@
             "name": "News",
             "url": "news",
             "menu": true,
-            "view": "page-1",
+            "view": "view-0",
             "sections": [
                 "Main"
             ]
@@ -59,7 +59,7 @@
             "name": "Contacts",
             "url": "contacts",
             "menu": true,
-            "view": "page-1",
+            "view": "view-0",
             "sections": [
                 "Main"
             ]
