@@ -54,6 +54,7 @@ foreach ($db["pages"] as $r) {
         $args["css"][] = asset("css/grayscale.css");
         $args["css"][] = asset("css/srn.css");
         $args["js"] = [];
+        $args["js"][] = asset("js/grayscale.js");
         $args["js"][] = asset("js/srn.js");
 
         $this->renderer->render($response, "/head.php", $args);

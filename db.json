@@ -4,17 +4,17 @@
             "name": "Home",
             "url": "home",
             "menu": true,
-            "view": "view-0",
-            "sections": [
+            "action": "home",
+            "view": "home",
+            "elements": [
                 "Main"
             ]
         },
         {
             "name": "Services",
-            "url": "services",
+            "url": "#services",
             "menu": true,
-            "view": "view-0",
-            "sections": [
+            "elements": [
                 "Yacht design and engineering",
                 "Technical office",
                 "CFD",
@@ -25,20 +25,18 @@
         },
         {
             "name": "The team",
-            "url": "team",
+            "url": "#team",
             "menu": true,
-            "view": "view-0",
-            "sections": [
+            "elements": [
                 "Main"
             ],
             "comments": "Presentazione uno per uno con foto"
         },
         {
             "name": "Projects",
-            "url": "projects",
+            "url": "#projects",
             "menu": true,
-            "view": "view-0",
-            "sections": [
+            "elements": [
                 "GS 34",
                 "Mini",
                 "Tuccoli",
@@ -48,19 +46,17 @@
         },
         {
             "name": "News",
-            "url": "news",
+            "url": "#news",
             "menu": true,
-            "view": "view-0",
-            "sections": [
+            "elements": [
                 "Main"
             ]
         },
         {
             "name": "Contacts",
-            "url": "contacts",
+            "url": "#contacts",
             "menu": true,
-            "view": "view-0",
-            "sections": [
+            "elements": [
                 "Main"
             ]
         }

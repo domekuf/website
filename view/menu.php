@@ -1,8 +1,7 @@
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main"
-                aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
                 <div class="hamburger-icon"><span></span><span></span><span></span></div>
             </button>
             <a class="navbar-brand page-scroll" href="#page-top">

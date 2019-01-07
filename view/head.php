@@ -33,8 +33,13 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <!-- Bootstrap core CSS -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+        .intro {
+            background: url(<?=$data["intro-bg"]?>) no-repeat bottom center scroll;
+        }
+        </style>
 <?php foreach($css as $css_) { ?>
         <link rel="stylesheet" href="<?= $css_ ?>">
 <?php } ?>
     </head>
-    <body>
+    <body  id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
