@@ -12,8 +12,10 @@
         },
         {
             "name": "Services",
-            "url": "#services",
+            "url": "services",
             "menu": true,
+            "view": "section-0",
+            "action": "services",
             "elements": [
                 "Yacht design and engineering",
                 "Technical office",
@@ -25,8 +27,10 @@
         },
         {
             "name": "The team",
-            "url": "#team",
+            "url": "team",
             "menu": true,
+            "action": "team",
+            "view": "section-1",
             "elements": [
                 "Main"
             ],
@@ -34,8 +38,10 @@
         },
         {
             "name": "Projects",
-            "url": "#projects",
+            "url": "projects",
             "menu": true,
+            "action": "projects",
+            "view": "section-0",
             "elements": [
                 "GS 34",
                 "Mini",
@@ -46,7 +52,8 @@
         },
         {
             "name": "News",
-            "url": "#news",
+            "url": "news",
+            "view": "timeline",
             "menu": true,
             "elements": [
                 "Main"
@@ -54,8 +61,9 @@
         },
         {
             "name": "Contacts",
-            "url": "#contacts",
+            "url": "contacts",
             "menu": true,
+            "view": "contacts",
             "elements": [
                 "Main"
             ]
