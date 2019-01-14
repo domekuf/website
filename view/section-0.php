@@ -13,9 +13,9 @@ foreach ($data as $k=>$d) {
 <?php
     }
 ?>
-        <a href="#">
+        <a href="#" data-toggle="modal" data-target="#sample-modal">
             <div class="col-lg-4">
-                <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="200" height="200">
+                <img class="img-circle" src="https://picsum.photos/g/200/200?v=<?=$d?>" alt="Generic placeholder image" width="200" height="200">
                 <p><?=$T->trans($d)?></p>
             </div>
         </a>
