@@ -14,24 +14,12 @@ class ControllerStatic
         ];
     }
     static public function services($request, $response, $args) {
-        return [
-            "Yacht design and engineering",
-            "Technical office",
-            "CFD",
-            "FEM",
-            "Project management",
-            "High tech composite construction consultancies"
-        ];
+        return $args["elements"];
     }
     static public function team($request, $response, $args) {
         return json_decode(ManagerAssets::load("team.json"), true);
     }
-    static public function projects($request, $response, $args) {
-        return [
-            "GS 34",
-            "Mini",
-            "Tuccoli",
-            "Dufour JJL"
-        ];
+    static public function jobs($request, $response, $args) {
+        return $args["elements"];
     }
 }

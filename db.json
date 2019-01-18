@@ -17,12 +17,13 @@
             "view": "section-0",
             "action": "services",
             "elements": [
-                "Yacht design and engineering",
-                "Technical office",
-                "CFD",
-                "FEM",
-                "Project management",
-                "High tech composite construction consultancies"
+                { "title": "Yacht design and engineering", "content":
+"As a team made by different personalities with specific roles and talents, Skyron is prepared and equipped to provide a complete project of a sailing or motor yacht, with innovative ideas and all required skills and technology and softwares, supported by creativity and initiative.<br/>All design steps would be 100% covered:<br/>- External and internal layout<br/>- Structural arrangement and scantling (FEM)<br/>- Executive DWGs production<br/>- Hull and appendages hydrodynamics simulations (CFD)<br/>- Yacht Stability and Dynamics<br/>- Sailing propulsion and VPP<br/>- Engine propulsion and engine room arrangement and design<br/>- Onboard systems design<br/>- Production planning and project management" },
+                { "title": "Technical office", "content": "" },
+                { "title": "CFD", "content": "" },
+                { "title": "FEM", "content": "" },
+                { "title": "Project management", "content": "" },
+                { "title": "High tech composite construction consultancies", "content": "" }
             ]
         },
         {
@@ -37,16 +38,16 @@
             "comments": "Presentazione uno per uno con foto"
         },
         {
-            "name": "Projects",
-            "url": "projects",
+            "name": "Jobs",
+            "url": "jobs",
             "menu": true,
-            "action": "projects",
+            "action": "jobs",
             "view": "section-0",
             "elements": [
-                "GS 34",
-                "Mini",
-                "Tuccoli",
-                "Dufour JJL"
+                { "title": "GS 34", "content": "" },
+                { "title": "Mini", "content": "" },
+                { "title": "Tuccoli", "content": "" },
+                { "title": "Dufour JJL", "content": "" }
             ],
             "comments": "Come presentiamo? con una serie di quadretti che rimandano al singolo progetto (vedi Botin/Pure?)"
         },

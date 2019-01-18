@@ -59,6 +59,7 @@ $app->get("/{lang}/".$one_page["url"], function ($request, $response, $args) use
         $controller = $r["controller"]?:"ControllerStatic";
         $action = $r["action"]?:"default";
         $view = $r["view"]?:"view-0";
+        $args["elements"] = $r["elements"];
         $args["data"] = $controller::$action($request, $response, $args);
         $args["id"] = $r["url"];
         $args["title"] = $r["name"];
