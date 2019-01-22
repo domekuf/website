@@ -19,37 +19,51 @@
             "elements": [
                 { "title": "Yacht design and engineering", "content":
 "As a team made by different personalities with specific roles and talents, Skyron is prepared and equipped to provide a complete project of a sailing or motor yacht, with innovative ideas and all required skills and technology and softwares, supported by creativity and initiative.<br/>All design steps would be 100% covered:<br/>- External and internal layout<br/>- Structural arrangement and scantling (FEM)<br/>- Executive DWGs production<br/>- Hull and appendages hydrodynamics simulations (CFD)<br/>- Yacht Stability and Dynamics<br/>- Sailing propulsion and VPP<br/>- Engine propulsion and engine room arrangement and design<br/>- Onboard systems design<br/>- Production planning and project management" },
-                { "title": "Technical office", "content": "" },
-                { "title": "CFD", "content": "" },
-                { "title": "FEM", "content": "" },
-                { "title": "Project management", "content": "" },
-                { "title": "High tech composite construction consultancies", "content": "" }
+                { "title": "Technical office", "content":
+"Skyron can provide services to shipyard technical offices that need support in producing information for production, 2D CAD drawing, 3D modelling and production planning." },
+                { "title": "CFD", "content":
+"Velocity and performance are essential in making a competitive product.<br/>Skyron can provide a full CFD analysis of hull, wing profiles, keels, rudders, any appendages or  part and component that requires a deep hydrodynamic study and developement, and even more, optimization." },
+                { "title": "FEM", "content":
+"Composite parts and structures are developed and investigated by Skyron team with the latest FEM softwares, so to be optimized to each specific load case.<br/>The scantling will be supported by FE analysis, structural layout and lamination dwgs." },
+                { "title": "Project management", "content":
+"Thanks to a wide range of experiences and a strong network of contacts and suppliers, Skyron can manage a project for the client from start to finish:<br/>- Quotation phase<br/>- Production planning<br/>- Suppliers contacts<br/>- Production management<br/>- Delivery" },
+                { "title": "High tech composite construction consultancies", "content":
+"Thanks to their connections and experiences with yards that manufacture composite yachts of very high technology, and a laboratory specilized in testing such materials, Skyron can provide advisory service regarding composite material construction and precessing (from tooling to part production), in both fiberglass and carbon fiber:<br/>- Infusion technology <br/>- Pre-preg carbon technology " }
             ]
-        },
-        {
-            "name": "The team",
-            "url": "team",
-            "menu": true,
-            "action": "team",
-            "view": "section-1",
-            "elements": [
-                "Main"
-            ],
-            "comments": "Presentazione uno per uno con foto"
         },
         {
             "name": "Jobs",
             "url": "jobs",
             "menu": true,
             "action": "jobs",
-            "view": "section-0",
+            "view": "section-1",
             "elements": [
-                { "title": "GS 34", "content": "" },
-                { "title": "Mini", "content": "" },
-                { "title": "Tuccoli", "content": "" },
-                { "title": "Dufour JJL", "content": "" }
+                { "title": "GS 34", "content":
+"New Gran Soleil 34, our last full project.<br/>The entry level yacht of the well know italian brand Gran Soleil has been entirely designed by Skyron. From concept, to layout, waterlines and structures, the entire prject has been developped by our team. After recieving a warm welcome by the press, the first boat produced has competed its first sailing season in the Italian Offshore x2 Championship and reached the 1st placement." },
+                { "title": "Dufour Catamarans", "content":
+"Skyron has established a solid and prolific collaboration with Dufour Yachts, partecipating into the launch of the the yard that produces its new line Catamarans, engineering the serie production, and following each step of the construction and assembly as technical office director in the Forlì shipyard." },
+                { "title": "Ferretti Group", "content":
+"Skyron developped through the years a strong partnership with Ferretti Group, covering the propulsion and  systems design, the engine room arrangement, and kinematics design of several yacht models from all the group brands." },
+                { "title": "Basalt Mini 6,50", "content":
+"Design and construction of a Mini Transat 6.50 made in Basalt and recyclable materials. Structures scantling, seakeeping, and CFD optimizatoin of hull and appendages." },
+                { "title": "Electric Taxi", "content":
+"Preliminary design of a foiling taxi boat with electric propulsion, meant to work in the Venice Lagoon.<br/>CFD study and optimization of the foils, and development of the electric propusion system in collaboration with Huracan Power." },
+                { "title": "CorseT-Co", "content":
+"Skyron has provided Project Management services to the italian company CorseT-Co, specialized in manufacturing moulds and structures in composite materials for marine industries.  Skyron has followed and managed the construction of tools and the lamination of all composite structures of a 60 and a 66 ft sailing yacth, from hull and deck  to small components, using the most advanced technology and processes." },
+                { "title": "Linset", "content":
+"Skyron collaborates with the material laboratory Linset, a well known excellence in testing all composite materials used in the marine industries." }
             ],
             "comments": "Come presentiamo? con una serie di quadretti che rimandano al singolo progetto (vedi Botin/Pure?)"
+        },
+        {
+            "name": "The team",
+            "url": "team",
+            "menu": true,
+            "action": "team",
+            "view": "section-0",
+            "elements": [
+            ],
+            "comments": "elements filled in team.json, see controller-static"
         },
         {
             "name": "News",

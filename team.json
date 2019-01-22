@@ -1,16 +1,24 @@
 [{
-    "last": "Previdi",
-    "first": "Andrea",
-    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id dui quam. Donec at justo eros. Nullam pellentesque ex in turpis maximus pharetra. Integer fermentum neque massa, sit amet ultricies diam mattis sed. Integer euismod dolor at massa sodales dictum. Nulla commodo tortor id purus consectetur malesuada."
-},
-{
-    "last": "Brandolini",
-    "first": "Enrico",
-    "description" : "Nullam congue, urna eu cursus sagittis, lacus purus vulputate velit, ac aliquet tellus nibh ut dui. Donec sit amet tortor ac nisl vestibulum convallis congue in turpis. Pellentesque pharetra nisi vitae massa imperdiet convallis. Pellentesque nec velit nec urna semper convallis vel a urna."
-},
-{
-    "last": "Gerin",
-    "first": "Nicola",
-    "description" : "Nullam scelerisque ex eu eleifend dignissim. Vestibulum tempor porttitor condimentum. Fusce ut neque non nisl rhoncus luctus. Vestibulum risus eros, congue non nisi sed, faucibus fermentum arcu. Nulla nisl enim, sollicitudin non efficitur non, pulvinar vitae erat."
+"title": "Maria Luisa Francia",
+"photo": "https://media.licdn.com/dms/image/C4E03AQHye5wD1LUO5Q/profile-displayphoto-shrink_800_800/0?e=1553731200&v=beta&t=yUa6_AW-vt3ATDH4faXrwJMKCfIa3Rv4-s5ebNmC9mg",
+"link": "https://www.linkedin.com/in/marialuisa-francia-539a8185/"
+},{
+"title": "Enrico Brandolini",
+"photo": "https://media.licdn.com/dms/image/C4D03AQFrSI1V0LPnyQ/profile-displayphoto-shrink_800_800/0?e=1553731200&v=beta&t=9jqWrtxqximXsW9mNiDu0MyG5BvpIZzNvVwzQZ_sqD8",
+"link": "https://www.linkedin.com/in/enrico-brandolini-06b10793/"
+},{
+"title": "Nicola Gerin",
+"photo": "https://media.licdn.com/dms/image/C4D03AQGjlGBpXu0msg/profile-displayphoto-shrink_800_800/0?e=1553731200&v=beta&t=7ioNrRoY8T7FP2xBYsxUNOXos1cVZ5ueVyV6ghFOxWA",
+"link": "https://www.linkedin.com/in/nico-gerin-15b9bb107/"
+},{
+"title": "Oris D'Ubaldo",
+"photo": "https://media.licdn.com/dms/image/C5603AQEUumgH4LmaZg/profile-displayphoto-shrink_800_800/0?e=1553731200&v=beta&t=2gvUkiF_-_raKHkWoSPVpdJVBax6hZtwyIulXO1-g8I",
+"link": "https://www.linkedin.com/in/oris-m-d-ubaldo-8191b548/"
+},{
+"title": "Andrea Previdi",
+"link": "https://www.linkedin.com/in/andrea-previdi-626111117/"
+},{
+"title": "Mattia Sconocchia",
+"photo": "https://media.licdn.com/dms/image/C5103AQEYYtxamOpOQA/profile-displayphoto-shrink_800_800/0?e=1553731200&v=beta&t=IMQjpETjrg1fKX6MY88U9IrwSss7-3drqRMbFHNQaLM",
+"link":"https://www.linkedin.com/in/mattia-sconocchia-987a6411a/"
 }]
-

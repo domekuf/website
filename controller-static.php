@@ -14,10 +14,19 @@ class ControllerStatic
         ];
     }
     static public function services($request, $response, $args) {
-        return $args["elements"];
+        $services = $args["elements"];
+        foreach ($services as &$s) {
+            $s["photo"] = "https://picsum.photos/g/200/200?v=".$s["title"];
+        }
+        return $services;
     }
     static public function team($request, $response, $args) {
-        return json_decode(ManagerAssets::load("team.json"), true);
+        $team = json_decode(ManagerAssets::load("team.json"), true);
+        foreach ($team as &$t) {
+            $t["content"] = "Find more on <a target=\"_blank\" href=\"".$t["link"]."\">Linkedin</a>.";
+            if (!isset($t["photo"])) $t["photo"] = "https://picsum.photos/g/200/200?v=".$s["title"];
+        }
+        return $team;
     }
     static public function jobs($request, $response, $args) {
         return $args["elements"];
