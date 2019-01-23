@@ -11,7 +11,7 @@
                     <p>
 Skyron is a studio that provides talents in yacht design and engineering, bonded in a structured, homogeneous and organized work group.
 Skyron strongly believes in specific individual skills, giving value to personal ability and creativity.
-Born in 2013 by the intiative of a group of engineers and designers, the company has enstablished throughout the years a strong partnership with well known companies on both national and international land, and a network of suppliers.
+Born in 2013 by the intiative of a group of engineers and designers, the company has enstablished throughout the years a strong partnership with well known companies on both national and international land, and a wide network of suppliers.
                     </p>
                     <a href="#services" class="btn btn-circle page-scroll">
                         <i class="fa fa-angle-double-down animated"></i>
