@@ -12,4 +12,7 @@ class ManagerAssets
     static public function load($filename) {
         return file_get_contents(self::path($filename));
     }
+    static public function write($filename, $content) {
+        return file_put_contents(self::path($filename), $content);
+    }
 }

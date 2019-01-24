@@ -20,15 +20,45 @@ function asset($filename) {
 }
 
 $menu = [];
-foreach ($db["pages"] as $r) {
+$forms = [];
+$breaks = ["<br />","<br>","<br/>"];
+foreach ($db["pages"] as &$r) {
+    $url = $r["url"];
     if ($r["menu"]) {
         $menu[] = [
             "type" => "link",
-            "link" => "#".$r["url"],
+            "link" => "#$url",
             "label" => $r["name"]
         ];
     }
+    if (!isset($r["elements"])) continue;
+    foreach ($r["elements"] as $k => $el) {
+        $app->post("/$url/$k", function ($request, $response, $args) use (&$r, $k) {
+            global $db;
+            $body = $request->getParsedBody();
+            $r["elements"][$k] = $body;
+            ManagerAssets::write("db.json", str_ireplace(["\\r\\n", "<br\\/>"], "<br/>", json_encode($db, JSON_PRETTY_PRINT)));
+            return $response->withRedirect($this->router->pathFor('editor'));
+        })->setName("$url-$k");
+        $form = [];
+        $form["url"] = $url;
+        $form["key"] = $k;
+        $form["inputs"]["title"] = $el["title"];
+        $form["inputs"]["content"] = str_ireplace($breaks, "\r\n", $el["content"]);
+        $forms[] = $form;
+    }
 }
+
+$app->get("/editor", function ($request, $response, $args){
+    global $forms;
+    foreach($forms as &$form) {
+        $url = $form["url"];
+        $k = $form["key"];
+        $form["action"] = $this->router->pathFor("$url-$k");
+    }
+    $args["forms"] = $forms;
+    $this->renderer->render($response, "/editor.php", $args);
+})->setName("editor");
 
 $one_page = $db["pages"][0];
 
