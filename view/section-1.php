@@ -9,6 +9,7 @@
 foreach ($data as $k=>$o) {
     $d = $o["title"];
     $c = $o["content"];
+    $p = $o["photo"];
 ?>
     <div class="row featurette">
         <div class="col-md-7 <?php if ($k % 2) { ?> col-md-push-5 <?php } ?>">
@@ -16,7 +17,7 @@ foreach ($data as $k=>$o) {
             <p class="lead"><?=$c?></p>
         </div>
         <div class="col-md-5 <?php if ($k % 2) { ?> col-md-pull-7 <?php } ?>">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="https://picsum.photos/g/500/500?v=<?=$k?>" data-holder-rendered="true">
+            <img class="featurette-image img-responsive center-block" alt="<?=$p?>" src="<?=$p?>" data-holder-rendered="true">
         </div>
     </div>
     <hr>

@@ -11,7 +11,10 @@ foreach ($forms as $f) {
 <?php
     }
 ?>
-        <input type="submit">
+        <input type="submit" value="update">
+    </form>
+    <form method="POST" action="<?=$f["action_delete"]?>">
+        <input type="submit" value="delete">
     </form>
 <?php
 }

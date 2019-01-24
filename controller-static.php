@@ -4,6 +4,15 @@ require_once __DIR__ . '/manager-assets.php'; /* ManagerAssets */
 
 class ControllerStatic
 {
+    static function photo(&$object, $size) {
+        if (!isset($object["photo"])) {
+            if (!isset($object["localphoto"])) {
+                $object["photo"] = "https://picsum.photos/g/$size/$size?v=".$object["title"];
+            } else {
+                $object["photo"] = ManagerAssets::url($object["localphoto"]);
+            }
+        }
+    }
     static public function default($request, $response, $args) {
         return ManagerCurriculum::get();
     }
@@ -16,7 +25,7 @@ class ControllerStatic
     static public function services($request, $response, $args) {
         $services = $args["elements"];
         foreach ($services as &$s) {
-            $s["photo"] = "https://picsum.photos/g/200/200?v=".$s["title"];
+            self::photo($s, 200);
         }
         return $services;
     }
@@ -24,11 +33,15 @@ class ControllerStatic
         $team = json_decode(ManagerAssets::load("team.json"), true);
         foreach ($team as &$t) {
             $t["content"] = "Find more on <a target=\"_blank\" href=\"".$t["link"]."\">Linkedin</a>.";
-            if (!isset($t["photo"])) $t["photo"] = "https://picsum.photos/g/200/200?v=".$s["title"];
+            self::photo($t, 200);
         }
         return $team;
     }
     static public function jobs($request, $response, $args) {
-        return $args["elements"];
+        $jobs = $args["elements"];
+        foreach ($jobs as &$j) {
+            self::photo($j, 500);
+        }
+        return $jobs;
     }
 }
