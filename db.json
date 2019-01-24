@@ -5,10 +5,7 @@
             "url": "home",
             "menu": true,
             "action": "home",
-            "view": "home",
-            "elements": [
-                "Main"
-            ]
+            "view": "home"
         },
         {
             "name": "Services",
@@ -44,12 +41,14 @@
 "Skyron has established a solid and prolific collaboration with Dufour Yachts, partecipating into the launch of the the yard that produces its new line Catamarans, engineering the serie production, and following each step of the construction and assembly as technical office director in the Forlì shipyard." },
                 { "title": "Ferretti Group", "content":
 "Skyron developped through the years a strong partnership with Ferretti Group, covering the propulsion and  systems design, the engine room arrangement, and kinematics design of several yacht models from all the group brands." },
-                { "title": "Basalt Mini 6,50", "content":
+                { "title": "Loop650", "content":
 "Design and construction of a Mini Transat 6.50 made in Basalt and recyclable materials. Structures scantling, seakeeping, and CFD optimizatoin of hull and appendages." },
                 { "title": "Electric Taxi", "content":
 "Preliminary design of a foiling taxi boat with electric propulsion, meant to work in the Venice Lagoon.<br/>CFD study and optimization of the foils, and development of the electric propusion system in collaboration with Huracan Power." },
                 { "title": "CorseT-Co", "content":
 "Skyron has provided Project Management services to the italian company CorseT-Co, specialized in manufacturing moulds and structures in composite materials for marine industries.  Skyron has followed and managed the construction of tools and the lamination of all composite structures of a 60 and a 66 ft sailing yacth, from hull and deck  to small components, using the most advanced technology and processes." },
+                { "title": "Huracan electric power", "content":
+"" },
                 { "title": "Linset", "content":
 "Skyron collaborates with the material laboratory Linset, a well known excellence in testing all composite materials used in the marine industries." }
             ],
@@ -61,27 +60,19 @@
             "menu": true,
             "action": "team",
             "view": "section-0",
-            "elements": [
-            ],
             "comments": "elements filled in team.json, see controller-static"
         },
         {
             "name": "News",
             "url": "news",
             "view": "timeline",
-            "menu": true,
-            "elements": [
-                "Main"
-            ]
+            "menu": true
         },
         {
             "name": "Contacts",
             "url": "contacts",
             "menu": true,
-            "view": "contacts",
-            "elements": [
-                "Main"
-            ]
+            "view": "contacts"
         }
     ]
 }
