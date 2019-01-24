@@ -32,14 +32,23 @@ foreach ($db["pages"] as &$r) {
         ];
     }
     if (!isset($r["elements"])) continue;
-    foreach ($r["elements"] as $k => $el) {
+    $elements = $r["elements"];
+    $elements[] = ["title"=>"", "content"=>""];
+    foreach ($elements as $k => $el) {
         $app->post("/$url/$k", function ($request, $response, $args) use (&$r, $k) {
             global $db;
             $body = $request->getParsedBody();
-            $r["elements"][$k] = $body;
+            $r["elements"][$k]["title"] = $body["title"];
+            $r["elements"][$k]["content"] = $body["content"];
             ManagerAssets::write("db.json", str_ireplace(["\\r\\n", "<br\\/>"], "<br/>", json_encode($db, JSON_PRETTY_PRINT)));
             return $response->withRedirect($this->router->pathFor('editor'));
         })->setName("$url-$k");
+        $app->post("/$url/delete/$k", function ($request, $response, $args) use (&$r, $k) {
+            global $db;
+            unset($r["elements"][$k]);
+            ManagerAssets::write("db.json", str_ireplace(["\\r\\n", "<br\\/>"], "<br/>", json_encode($db, JSON_PRETTY_PRINT)));
+            return $response->withRedirect($this->router->pathFor('editor'));
+        })->setName("$url-delete-$k");
         $form = [];
         $form["url"] = $url;
         $form["key"] = $k;
@@ -55,6 +64,7 @@ $app->get("/editor", function ($request, $response, $args){
         $url = $form["url"];
         $k = $form["key"];
         $form["action"] = $this->router->pathFor("$url-$k");
+        $form["action_delete"] = $this->router->pathFor("$url-delete-$k");
     }
     $args["forms"] = $forms;
     $this->renderer->render($response, "/editor.php", $args);
