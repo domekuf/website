@@ -114,7 +114,9 @@
             "name": "News",
             "url": "news",
             "view": "timeline",
-            "menu": true
+            "menu": true,
+            "controller": "ControllerNews",
+            "action": "index"
         },
         {
             "name": "Contacts",
