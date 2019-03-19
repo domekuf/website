@@ -93,7 +93,24 @@ $app->get("/{lang}/".$one_page["url"], function ($request, $response, $args) use
     $args["js"] = [];
     $args["js"][] = asset("js/grayscale.js");
     $args["js"][] = asset("js/srn.js");
-
+    foreach([76] as $res) {
+        $size = $res."x".$res;
+        $args["apple_icon"][$size] = asset("favicon/apple-touch-icon.png");
+    }
+    foreach([96] as $res) {
+        $size = $res."x".$res;
+        $args["icon"][$size] = asset("favicon/android-chrome-$size.png");
+    }
+    foreach([16, 32] as $res) {
+        $size = $res."x".$res;
+        $args["icon"][$size] = asset("favicon/favicon-$size.png");
+    }
+    $args["manifest"] = asset("favicon/site.webmanifest");
+    $args["mask_icon"] = asset("favicon/safari-pinned-tab.svg");
+    foreach([150] as $res) {
+        $size = $res."x".$res;
+        $args["ms_icon"][$size] = asset("favicon/mstile-$size.png");
+    }
     $this->renderer->render($response, "/head.php", $args);
     $this->renderer->render($response, "/menu.php", $args);
     foreach ($db["pages"] as $r) {

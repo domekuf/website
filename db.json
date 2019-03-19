@@ -40,6 +40,7 @@
                     "content": "Thanks to a wide range of experiences and a strong network of contacts and suppliers, Skyron can manage a project for the client from start to finish:<br/>- Quotation phase<br/>- Production planning<br/>- Suppliers contacts<br/>- Production management<br/>- Delivery"
                 },
                 {
+                    "localphoto": "img/htccc.jpg",
                     "title": "High tech composite construction consultancies",
                     "content": "Thanks to their connections and experiences with yards that manufacture composite yachts of very high technology, and a laboratory specilized in testing such materials, Skyron can provide advisory service regarding composite material construction and precessing (from tooling to part production), in both fiberglass and carbon fiber:<br/>- Infusion technology <br/>- Pre-preg carbon technology "
                 }
@@ -80,14 +81,17 @@
                     "content": "Skyron has provided Project Management services to the italian company CorseT-Co, specialized in manufacturing moulds and structures in composite materials for marine industries.  Skyron has followed and managed the construction of tools and the lamination of all composite structures of a 60 and a 66 ft sailing yacth, from hull and deck  to small components, using the most advanced technology and processes."
                 },
                 {
+                    "localphoto":"img/huracan.jpg",
                     "title": "Huracan electric power",
                     "content": "Skyron helped Huracan Electric Power (a well known company in the electric automotive and motor world) to enter the marine industry, and developped a propulsion system for sailing yachts 100% electric."
                 },
                 {
+                    "localphoto": "img/asis.jpg",
                     "title": "ASIS 5.5",
                     "content": "Skyron has developped the preliminary design of a full-electric 5,5 m tender for ASIS Boats, including hull and saildrive CFD optimization."
                 },
                 {
+                    "localphoto":"img/linset.jpg",
                     "title": "Linset",
                     "content": "Skyron collaborates with the material laboratory Linset, a well known excellence in testing all composite materials used in the marine industries."
                 },
@@ -96,6 +100,7 @@
                     "content": "Skyron likes developing its own \"tools\". One example, we created a software that matches engine-propeller of each specific boat type, just by knowing the main characteristics and variables of the boat (Sailing\/motor yacht, Design speed, weight, length\u2026)"
                 },
                 {
+                    "localphoto": "img/tuccoli.jpg",
                     "title": "Tuccoli",
                     "content": "Skyron is the official Tuccoli shipyard technical office, supporting production with 2D and 2D modelling, managing production steps and guranteeing best quality standards."
                 }

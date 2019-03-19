@@ -9,23 +9,19 @@
         <meta name="author" content="Skyron">
 
         <title><?=TITLE?><?=$title?></title>
-        <link rel="apple-touch-icon" sizes="57x57"         href="favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60"         href="favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72"         href="favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76"         href="favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114"       href="favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120"       href="favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144"       href="favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152"       href="favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180"       href="favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32"    href="favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96"    href="favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16"    href="favicon/favicon-16x16.png">
-        <link rel="manifest"                               href="favicon/manifest.json">
-        <meta name="msapplication-TileImage"            content="favicon/ms-icon-144x144.png">
+<?php foreach($apple_icon as $size => $href) { ?>
+        <link rel="apple-touch-icon" sizes="<?= $size ?>" href="<?= $href ?>">
+<?php } ?>
+<?php foreach($icon as $size => $href) { ?>
+        <link rel="icon" type="image/png" sizes="<?= $size ?>" href="<?= $href ?>">
+<?php } ?>
+
+        <meta name="msapplication-TileColor" content="#da532c">
+<?php foreach($ms_icon as $size => $href) { ?>
+        <meta name="msapplication-TileImage"            content="<?= $href ?>">
+<?php } ?>
+        <link rel="manifest"                               href="<?= $manifest ?>">
         <meta name="theme-color" content="#ffffff">
-        <meta name="msapplication-TileColor" content="#ffffff">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Custom fonts -->
