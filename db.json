@@ -116,18 +116,20 @@
             "comments": "elements filled in team.json, see controller-static"
         },
         {
+            "name": "Contacts",
+            "url": "contacts",
+            "menu": true,
+            "view": "contacts"
+        }
+    ],
+    "broken_pages":[
+        {
             "name": "News",
             "url": "news",
             "view": "timeline",
             "menu": true,
             "controller": "ControllerNews",
             "action": "index"
-        },
-        {
-            "name": "Contacts",
-            "url": "contacts",
-            "menu": true,
-            "view": "contacts"
         }
     ]
 }
